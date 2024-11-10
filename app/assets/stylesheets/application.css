@@ -48,3 +48,20 @@ section p, section ul li {
   font-size: 1.25rem;
   padding: 10px;
 }
+
+.home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

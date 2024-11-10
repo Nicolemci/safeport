@@ -1,3 +1,5 @@
+<a href="<%= root_path %>" class="home-button">Home</a>
+
 <% background_image = if Rails.application.assets.find_asset("#{@airport.name.downcase.gsub(' ', '_')}_background.jpg")
                          asset_path("#{@airport.name.downcase.gsub(' ', '_')}_background.jpg")
                        else
@@ -6,6 +8,8 @@
 
 <section style="background-image: url('<%= background_image %>'); background-size: cover; color: white; padding: 20px;">
   <h1><%= @airport.name %></h1>
+
+
 
   <h2>Travel Options</h2>
 <ul>
