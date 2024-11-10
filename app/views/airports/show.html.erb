@@ -8,11 +8,12 @@
   <h1><%= @airport.name %></h1>
 
   <h2>Travel Options</h2>
-  <ul>
-    <li><strong>Recommended:</strong> Recommended option here</li>
-    <li><strong>Fastest:</strong> Fastest option here</li>
-    <li><strong>Cheapest:</strong> Cheapest option here</li>
-  </ul>
+<ul>
+  <li><strong>Recommended:</strong> <%= @airport.recommended %></li>
+  <li><strong>Fastest:</strong> <%= @airport.fastest %></li>
+  <li><strong>Cheapest:</strong> <%= @airport.cheapest %></li>
+</ul>
+
 
   <!-- Map Section -->
   <div id="map" style="height: 300px; margin-top: 20px;">
