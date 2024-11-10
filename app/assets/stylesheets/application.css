@@ -65,3 +65,24 @@ section p, section ul li {
 .home-button:hover {
   background-color: #0056b3; /* Darker shade on hover */
 }
+
+.currency-converter {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.currency-converter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.currency-converter label,
+.currency-converter input,
+.currency-converter select,
+.currency-converter button {
+  margin: 5px 0;
+}
