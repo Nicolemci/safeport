@@ -1,14 +1,10 @@
-<h1>SafePort</h1>
-<%= form_with(url: root_path, method: :get, local: true) do %>
-  <%= label_tag :airport, "Choose an airport" %>
-  <%= select_tag :airport, options_from_collection_for_select(@airports, 'id', 'name'), prompt: "Select an airport", onchange: "location = '/airports/' + this.value;" %>
-<% end %>
-
-<script>
-  document.getElementById("city-select").addEventListener("change", function() {
-    const city = this.value;
-    if (city) {
-      window.location.href = `/cities/${city}`;
-    }
-  });
-</script>
+<section style="background-image: url('<%= asset_path('default_background.jpg') %>'); background-size: cover; color: white; min-height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center;">
+  <section class="home-background">
+  <div class="content">
+    <h1 class="title">SafePort</h1>
+    <%= form_with(url: root_path, method: :get, local: true) do %>
+      <%= label_tag :airport, "Choose an airport", class: "label" %><br>
+      <%= select_tag :airport, options_from_collection_for_select(@airports, 'id', 'name'), prompt: "Select an airport", class: "dropdown", onchange: "location = '/airports/' + this.value;" %>
+    <% end %>
+  </div>
+</section>

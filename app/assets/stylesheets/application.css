@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 section h2 {
   margin-top: 20px;
   font-size: 1.5em;
@@ -10,4 +11,40 @@ section h2 {
 section p, section ul li {
   font-size: 1em;
   line-height: 1.6;
+}
+
+.home-background {
+  background-image: url('<%= asset_path('default_background.jpg') %>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds spacing below the title */
+}
+
+.label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  font-size: 1.25rem;
+  padding: 10px;
 }
