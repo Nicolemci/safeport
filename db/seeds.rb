@@ -8,8 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 #
-Airport.create(
-  name: "London Heathrow",
-  city: "London",
-  description: "London Heathrow Airport (LHR) is one of the busiest airports in the world, located west of central London. \n\nGetting to the city center by train:\nThe Heathrow Express is the fastest way to travel between Heathrow and central London. Trains depart every 15 minutes from Terminals 2 and 3 and reach Paddington Station in about 15 minutes. Tickets can be purchased online, at the station, or via mobile apps."
-)
+Airport.create(name: "London Heathrow", city: "London", description: "Heathrow details...")
+Airport.create(name: "London Gatwick", city: "London", description: "Gatwick details...")
+Airport.create(name: "Charles de Gaulle", city: "Paris", description: "Paris airport details...")
+# Add more airports as needed

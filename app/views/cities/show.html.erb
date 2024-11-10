@@ -1,0 +1,49 @@
+<section style="background-image: url('<%= asset_path("#{@city.downcase}_background.jpg") %>'); background-size: cover; color: white; padding: 20px;">
+  <h1>Airports in <%= @city %></h1>
+
+  <% @airports.each do |airport| %>
+    <h2><%= airport.name %></h2>
+
+    <!-- Travel Options Section -->
+    <h3>Travel Options</h3>
+    <ul>
+      <li><strong>Recommended:</strong> Heathrow Express (example)</li>
+      <li><strong>Fastest:</strong> Heathrow Express (example)</li>
+      <li><strong>Cheapest:</strong> London Underground (example)</li>
+    </ul>
+
+    <!-- Map Section -->
+    <div id="map-<%= airport.id %>" style="height: 300px; margin-top: 20px;">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=<%= airport.name %>&destination=<%= @city %> City Center"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Public Transport Section -->
+    <h3>Public Transport</h3>
+    <p>Details about public transport for <%= airport.name %>...</p>
+
+    <!-- Express Train Section -->
+    <h3>Express Train</h3>
+    <p>Details about express trains...</p>
+
+    <!-- Taxi Section -->
+    <h3>Taxi</h3>
+    <p>Taxi information...</p>
+
+    <!-- Ride Apps Section -->
+    <h3>Ride Apps</h3>
+    <p>Ride-hailing app information...</p>
+
+    <!-- Tips Section -->
+    <h3>Tips</h3>
+    <ul>
+      <li>General travel tips for <%= airport.name %></li>
+    </ul>
+  <% end %>
+</section>

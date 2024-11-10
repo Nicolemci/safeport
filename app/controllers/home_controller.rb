@@ -7,4 +7,9 @@ class HomeController < ApplicationController
     end
   end
 
+  def show
+    @airport = Airport.find(params[:id])
+  end
+
+
 end
