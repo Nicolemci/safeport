@@ -1,0 +1,13 @@
+<h1>SafePort</h1>
+<%= form_with(url: root_path, method: :get, local: true) do %>
+  <%= label_tag :city, "Choose a city" %>
+  <%= select_tag :city, options_from_collection_for_select(@cities, 'city', 'city'), prompt: "Select a city" %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<h2>Airports in <%= params[:city] %></h2>
+<ul>
+  <% @airports.each do |airport| %>
+    <li><%= airport.name %> - <%= airport.description %></li>
+  <% end %>
+</ul>
