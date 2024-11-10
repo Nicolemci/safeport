@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  get 'cities/:city', to: 'cities#show', as: 'city'
+  root 'home#index'                # Home page with airport search or dropdown
+  get 'airports/:id', to: 'airports#show', as: 'airport'
 end

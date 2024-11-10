@@ -8,7 +8,16 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 #
-Airport.create(name: "London Heathrow", city: "London", description: "Heathrow details...")
-Airport.create(name: "London Gatwick", city: "London", description: "Gatwick details...")
-Airport.create(name: "Charles de Gaulle", city: "Paris", description: "Paris airport details...")
-# Add more airports as needed
+# db/seeds.rb
+Airport.create(
+  name: "London Heathrow",
+  city: "London",
+  recommended: "Heathrow Express for fast, direct travel to central London",
+  fastest: "Heathrow Express - 15 minutes to Paddington",
+  cheapest: "London Underground (Piccadilly Line)",
+  public_transport: "Heathrow is connected to central London via the Piccadilly Line and several bus routes...",
+  express_train: "The Heathrow Express is the fastest option, taking 15 minutes to reach Paddington...",
+  taxi: "Taxis are available outside each terminal and cost around £50 to £70 to central London...",
+  ride_apps: "Ride-hailing apps like Uber operate at Heathrow with designated pickup points...",
+  tips: "Consider using the Heathrow Express during peak hours to avoid traffic delays."
+)

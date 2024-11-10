@@ -10,13 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_11_10_081657) do
+ActiveRecord::Schema[7.1].define(version: 2024_11_10_093119) do
   create_table "airports", force: :cascade do |t|
     t.string "name"
     t.string "city"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "public_transport"
+    t.text "express_train"
+    t.text "taxi"
+    t.text "ride_apps"
+    t.text "tips"
+    t.text "recommended"
+    t.text "fastest"
+    t.text "cheapest"
   end
 
 end

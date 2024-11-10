@@ -1,7 +1,7 @@
 <h1>SafePort</h1>
-<%= form_with(url: root_path, method: :get, local: true, id: "city-form") do %>
-  <%= label_tag :city, "Choose a city" %>
-  <%= select_tag :city, options_from_collection_for_select(@cities, 'city', 'city'), prompt: "Select a city", id: "city-select" %>
+<%= form_with(url: root_path, method: :get, local: true) do %>
+  <%= label_tag :airport, "Choose an airport" %>
+  <%= select_tag :airport, options_from_collection_for_select(@airports, 'id', 'name'), prompt: "Select an airport", onchange: "location = '/airports/' + this.value;" %>
 <% end %>
 
 <script>
